@@ -1,0 +1,109 @@
+
+body{
+    
+    background-image: url(background2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.box{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: ba8f95;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+
+.box p{
+    font-family: Handjet;
+    font-weight:600;
+    font-size: 20px;
+    color: #463f3a;
+    margin-bottom: 1px;
+    margin-top: 5%;
+    margin-left: 1%;
+
+}
+h1{
+    
+    font-family: Handjet;
+    font-weight:800;
+    font-size: 60px;
+    color: #463f3a;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    
+}
+
+.box input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ecf8f8;
+    outline: 0;
+    padding: 10px;
+    margin: 1px 0 20px;
+    border-radius: 5px;
+
+}
+
+
+.box button{
+    width: 100%;
+    height: 50px;
+    background: #eee4e1;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin: 25px 0 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: 20px 0;
+    font-family: Handjet;
+    font-size: 28px;
+    color: #463f3a;
+    font-weight: 700;
+}
+
+#img{
+    width: 150px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s; 
+
+
+}
+#img qr_img{
+    width: 100%;
+    padding: 10px;
+
+}
+#img.show-qr_img{
+    max-height: 300px;
+    margin: 10px auto;
+    border:1px solid #ecf8f8;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(2px);
+    }
+    
+}
